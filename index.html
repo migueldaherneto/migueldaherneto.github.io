@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Miguel Daher - Music Composer / Producer</title>
+  <meta name="description" content="Music portfolio — demo tracks, about, gear/software, and contact." />
+  
+  <link rel="icon" href="md-16.png" sizes="16x16" type="image/png">
+  <link rel="icon" href="md-32.png" sizes="32x32" type="image/png">
+       
+  <style>
+    :root {
+      --maxw: 1120px;
+      //--bg: #0b0d12;
+      --bg: #000;
+      --fg: #e9edf1;
+      --muted: #b8c0cc;
+      --card: #121621;
+      --rule: rgba(255,255,255,0.08);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      color: var(--fg);
+      background: var(--bg);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    a { color: inherit; }
+
+    /* --- Header image: full width but capped at 1920px --- */
+    .hero-outer {
+      max-width: 1920px; /* cap image width */
+      margin-inline: auto; /* center when screens are wider than 1920 */
+    }
+    header.hero {
+      position: relative;
+      display: grid;
+      place-items: center;
+      min-height: 320px;
+      height: clamp(340px, 50vw, 520px); /* ~500px target on wide screens */
+      overflow: hidden;
+    }
+    .hero img.bg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* fill, keep aspect */
+      --filter: brightness(0.55) saturate(1.05);
+	  filter: brightness(0.65) saturate(1);
+      transform: scale(1.02);
+    }
+    .hero .overlay {
+      position: relative;
+      text-align: center;
+      padding: 1rem 1.25rem;
+      text-shadow: 0 2px 14px rgba(0,0,0,0.55);
+    }
+    .hero h1 {
+      margin: 0 0 .25rem;
+      font-size: clamp(1.9rem, 5vw, 3.5rem);
+      letter-spacing: .4px;
+    }
+    .hero .subtitle {
+      margin: 0;
+      font-size: clamp(1rem, 2.2vw, 1.25rem);
+      --color: var(--muted);
+    }
+
+    /* --- Layout --- */
+    .container { width: min(100% - 2rem, var(--maxw)); margin-inline: auto; }
+    section { padding: 2.5rem 0; border-top: 1px solid var(--rule); }
+    h2 { margin: 0 0 1rem; font-size: clamp(1.25rem, 2.5vw, 1.5rem); }
+    p { margin: 0.5rem 0 0; }
+
+    /* SoundCloud embeds grid */
+    .sc-embeds { display: grid; gap: 1rem; grid-template-columns: 1fr; }
+    @media (min-width: 800px) { .sc-embeds { grid-template-columns: 1fr 1fr; } }
+
+/*.sc-embeds { grid-template-columns: 1fr; }*/
+
+    .embed-card { background: var(--card); border: 1px solid var(--rule); border-radius: 14px; padding: .75rem; }
+    iframe { width: 100%; border: 0; }
+
+    /* Footer */
+    footer { border-top: 1px solid var(--rule); padding: 2rem 0; color: var(--muted); font-size: .95rem; }
+  </style>
+</head>
+<body>
+  <!-- Header image: replace header.jpg with your own file name -->
+  <div class="hero-outer">
+    <header class="hero" role="banner" aria-label="Site header with background image">
+      <img class="bg" src="hero.jpg" alt="" />
+      <div class="overlay">
+        <h1>Miguel Daher</h1>
+        <p class="subtitle">composer | music producer</p>
+      </div>
+    </header>
+  </div>
+
+
+  <main id="content" class="container">
+    <section id="demos" aria-labelledby="demos-title" style="border-top:0px;">
+      <h2 id="demos-title">Demo Tracks</h2>
+      <div class="sc-embeds">
+
+
+        <!-- Example SoundCloud embed; replace the URL. You can duplicate this block for more tracks. -->
+        <div class="embed-card">
+          <iframe
+            title="SoundCloud Player"
+            height="166"
+            scrolling="no"
+            allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2158194774%3Fsecret_token%3Ds-0FvntCY9xQH&color=%23ff5500&inverse=false&auto_play=false&show_user=true&visual=true">
+          </iframe>
+        </div>
+		
+		
+        <!-- Example SoundCloud embed; replace the URL. You can duplicate this block for more tracks. -->
+        <div class="embed-card">
+          <iframe
+            title="SoundCloud Player"
+            height="166"
+            scrolling="no"
+            allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2158251156%3Fsecret_token%3Ds-36fnNieIar2&color=%23ff5500&inverse=false&auto_play=false&show_user=true&visual=true">
+          </iframe>
+        </div>
+		
+		
+
+
+        <!-- Example SoundCloud embed; replace the URL. You can duplicate this block for more tracks. -->
+        <div class="embed-card">
+          <iframe
+            title="SoundCloud Player"
+            height="166"
+            scrolling="no"
+            allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2158577748%3Fsecret_token%3Ds-S9D65YPzXyI&color=%23ff5500&inverse=false&auto_play=false&show_user=true&visual=true">
+          </iframe>
+        </div>
+		
+		        <!-- Example SoundCloud embed; replace the URL. You can duplicate this block for more tracks. -->
+        <div class="embed-card">
+          <iframe
+            title="SoundCloud Player"
+            height="166"
+            scrolling="no"
+            allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2158577922%3Fsecret_token%3Ds-amBVH1t0zBV&color=%23ff5500&inverse=false&auto_play=false&show_user=true&visual=true">
+          </iframe>
+        </div>
+		
+		        <!-- Example SoundCloud embed; replace the URL. You can duplicate this block for more tracks. -->
+        <div class="embed-card">
+          <iframe
+            title="SoundCloud Player"
+            height="166"
+            scrolling="no"
+            allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2158578018%3Fsecret_token%3Ds-Me0zmAvlDYR&color=%23ff5500&inverse=false&auto_play=false&show_user=true&visual=true">
+          </iframe>
+        </div>
+		
+		        <!-- Example SoundCloud embed; replace the URL. You can duplicate this block for more tracks. -->
+        <div class="embed-card">
+          <iframe
+            title="SoundCloud Player"
+            height="166"
+            scrolling="no"
+            allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2158578102%3Fsecret_token%3Ds-FsTtLCYpbVk&color=%23ff5500&inverse=false&auto_play=false&show_user=true&visual=true">
+          </iframe>
+        </div>
+		
+		        <!-- Example SoundCloud embed; replace the URL. You can duplicate this block for more tracks. -->
+        <div class="embed-card">
+          <iframe
+            title="SoundCloud Player"
+            height="166"
+            scrolling="no"
+            allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2158578189%3Fsecret_token%3Ds-VtvcOB6IuEj&color=%23ff5500&inverse=false&auto_play=false&show_user=true&visual=true">
+          </iframe>
+        </div>
+		
+		        <!-- Example SoundCloud embed; replace the URL. You can duplicate this block for more tracks. -->
+        <div class="embed-card">
+          <iframe
+            title="SoundCloud Player"
+            height="166"
+            scrolling="no"
+            allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2158578309%3Fsecret_token%3Ds-dUBODfQb5bq&color=%23ff5500&inverse=false&auto_play=false&show_user=true&visual=true">
+          </iframe>
+        </div>
+
+		        <!-- Example SoundCloud embed; replace the URL. You can duplicate this block for more tracks. -->
+        <div class="embed-card">
+          <iframe
+            title="SoundCloud Player"
+            height="166"
+            scrolling="no"
+            allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2158578417%3Fsecret_token%3Ds-ZyZ2D1t3jmp&color=%23ff5500&inverse=false&auto_play=false&show_user=true&visual=true">
+          </iframe>
+        </div>
+
+
+
+
+
+      </div>
+    </section>
+
+    <section id="about" aria-labelledby="about-title">
+      <h2 id="about-title">About me</h2>
+      <p>
+        I'm a music composer / producer (born in Brazil, 1984), specialized in Midi/VST (virtual instruments) and sample libraries.
+	<br/>I'm able to create music of most syles, but my strengths are orchestral and hybrid ("game music").
+	<br/>Feel free to listen to some of my demos on this page!
+      </p>
+    </section>
+
+
+    <section id="availability" aria-labelledby="availability-title">
+      <h2 id="availability-title">Current Availability</h2>
+      <p>
+        Currently available for full time position (as of 8/2025).
+      </p>
+    </section>
+	
+	
+    <section id="gear" aria-labelledby="gear-title">
+      <h2 id="gear-title">Gear/Software</h2>
+
+DAW:
+<br/>Cakewalk Sonar
+<br/>
+<br/>Sampler:
+<br/>Kontakt 7
+<br/>
+<br/>Samples:
+<br/>Kontakt 7 Factory Library
+<br/>Nucleus Audio Imperia
+<br/>Cinesamples Piano
+<br/>Splash Sound - Percussion Elements (1,2 and 3)
+<br/>Splash Sound - Jaw Harp
+<br/>Splash Sound - Music Box
+<br/>AmpleGuitar_2_3_1
+<br/>Indiginus Renaxxance II Nylon String Guitar
+<br/>Indiginus Renegade Acoustic Guitar
+<br/>Embertone Joshua Bell Violin
+<br/>Ilya Efimov Nylon Guitar
+<br/>Ilya Efimov Acoustic Guitar
+<br/>Project Sam Free Orchestra 1 & 2 (Church Organ, Concert Harp, Upright Bass)
+<br/>FluffyAudio Free Koto, Haunted Choir, LogDrum, Xaxophone, Khim
+<br/>Impact Soundworks Shreddage 3 Precision Free (Electric Bass Guitar)
+<br/>Impact Soundworks Shreddage 3 Stratus Free (Clean Electric Strat Guitar)
+<br/>
+<br/>Plugins:
+<br/>Liquidsonics Cinematic Rooms (Reverb)
+<br/>Valhalla Vintage Verb (Reverb)
+<br/>Valhalla Supermassive Verb (Reverb)
+<br/>Convology XT Plugin (Reverb)
+<br/>Samplicity - Bricasti IRs version 2023-10 (Reverb IRs)
+<br/>Ozone Elements (eq, imager, limiter)
+<br/>FreeComp (FreeSuite) (Compressor)
+<br/>TDR Nova (Dynamic Eq)
+<br/>LoudMax (Limiter)
+<br/>Graillon (Pitch)
+<br/>IVGI2 (Saturation)
+<br/>TDR VOS SlickEQ (Saturation)
+<br/>TDR Nova (Dynamic EQ)
+<br/>TDR Kotelnikov (Mastering Compressor)
+<br/>BABY Audio Comeback Kid (Delay)
+<br/> 
+<br/>Hardware:
+<br/>Scarlett 2i2
+<br/>JBL 305p MkII Audio Monitors
+<br/>AKG K240 MkII Headphones
+<br/>AKG K371 Headphones
+<br/>Sennheiser HD560S Headphones
+<br/>
+<br/>Instruments:
+<br/>Casio CDP S100 Digital Piano 88 Keys
+<br/>Rozini Rx210 Nylon Guitar
+<br/>
+<br/>PS: All paid software/samples listed here were bought by myself, and are licensed for me to use in music made for commercial projects. Proof of ownership can be provided if needed.
+    </section>
+
+    <section id="pricing" aria-labelledby="pricing-title">
+      <h2 id="pricing-title">Pricing/Methodology</h2>
+      
+	<p>
+		Current rates are negotiable, starting at $100 per minute of (production-ready) music.
+	</p>
+	<p>
+	This can vary depending on the scope of the project. Once you describe your project with details, I will let you know how much I'm willing to charge for it. For more involved projects where I need to be an active participant, I might charge an hourly rate instead.
+	</p>
+	
+<br/>
+
+	<p>
+	My services include:
+	</p>
+	
+	<br/>- Constant communication with devs in order to create something cohesive
+	<br/>- Ability to create sketches to test in-game before commiting to an idea (which I might do at a cost if you're not commited to hiring me yet)
+	<br/>- Ability to work with programming tools for dynamic music if needed (I'm a senior developer/programmer)
+	<br/>- Ability to deliver production-ready tracks (mastering) mantaining proper/cohesive levels across the soundtrack (LUFS)
+	<br/>- Ability to work fast and make fast changes when needed (several years of experience with my DAW of choice, use of templates, proficiency with midi keyboard, etc)
+	<br/>
+
+
+      
+    </section>
+
+    <section id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact me</h2>
+      <p>
+        <!-- Placeholder: you can add a form here later. For now, put an email link or buttons. -->
+        If you're looking to hire me / ask me for a custom demo / or other questions, please use
+        <a href="https://migueldaher.bandcamp.com/contact?b=2659734701">this form (Bandcamp)</a>.
+	<br/><br/><b>DISCLAIMER:</b> As of now, all the music I created was for portfolio reasons and I do not have work experience in the field. I'm originally a computer scientist and have worked in software development for 10 years (where I learned to work in a professional manner and as part of a team). But what you hear is what you get - you can judge the quality of my music by listening to the demos on this page.
+	<br/>Note that I might not respond to requests that sound sketchy/scammy, at my own discretion.
+      </p>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">© <span id="year"></span> Miguel Daher</div>
+  </footer>
+
+  <script>
+    // Auto-update the footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
