@@ -54,8 +54,9 @@
       object-fit: cover; /* fill, keep aspect */
       --filter: brightness(0.55) saturate(1.05);
 	  --filter: brightness(0.55) saturate(1.05);
-      transform: scale(1.02);
+      --transform: scale(1.02);
     }
+	@media (min-width: 1920px) { .hero img.bg { border-bottom-right-radius: 20px; border-bottom-left-radius: 20px;} }
     .hero .overlay {
       position: relative;
       text-align: center;
