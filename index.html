@@ -95,20 +95,37 @@
     /* Footer */
     footer { border-top: 1px solid var(--rule); padding: 2rem 0; color: var(--muted); font-size: .95rem; }
 	
-	
-	
-	
+	/* --- Navigation Menu --- */
+	.nav-menu {
+	  display: flex;
+	  flex-wrap: wrap;      /* allow automatic line breaking */
+	  justify-content: center;
+	  gap: 1rem;            /* spacing between links */
+	  padding: 1rem 0;
+	}
+
+	.nav-menu a {
+	  text-decoration: none;
+	  color: var(--fg);
+	  padding: 0.5rem 1rem;
+	  border-radius: 6px;
+	  transition: background 0.2s ease;
+	}
+
+	.nav-menu a:hover {
+	  background: var(--rule);
+	}
 	
 	.embed-card h3 {
-  margin: 0 0 0.25rem;
-  font-size: 1rem;
-}
+	  margin: 0 0 0.25rem;
+	  font-size: 1rem;
+	}
 
-.embed-card p {
-  margin: 0 0 0.75rem;
-  font-size: 0.9rem;
-  color: var(--muted);
-}
+	.embed-card p {
+	  margin: 0 0 0.75rem;
+	  font-size: 0.9rem;
+	  color: var(--muted);
+	}
 
 
   </style>
@@ -127,10 +144,23 @@
 
 
   <main id="content" class="container">
+  
+	<!-- Navigation Menu Section -->
+	<section id="menu" aria-label="Site navigation" style="padding-bottom: 0;">
+	  <nav class="nav-menu container">
+		<a href="#">Home</a>
+		<a href="#about">About Me</a>
+		<a href="#gear">Gear</a>
+		<a href="#pricing">Pricing</a>
+		<a href="#contact">Contact</a>
+		<!-- You can add more links here -->
+	  </nav>
+	</section>
+  
+  
     <section id="demos" aria-labelledby="demos-title" style="border-top:0px;">
       <h2 id="demos-title">Demo Tracks</h2>
       <div class="sc-embeds">
-
 
         <!-- Example SoundCloud embed; replace the URL. You can duplicate this block for more tracks. -->
         <div class="embed-card">
