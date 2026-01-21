@@ -129,6 +129,29 @@
 	}
 
 
+
+/*.bandcamp-embeds*/
+
+	.bc-outer {
+	  display: flex;
+	  /*justify-content: center;*/
+	}
+
+	.bc-card {
+	  background: #fff;
+	  padding: 16px;
+	  border-radius: 12px;
+
+	  width: 100%;
+	  max-width: 700px; /* your cap */
+	}
+
+	.bc-card iframe {
+	  display: block;
+	  width: 100%;
+	  height: 470px;
+	}
+
   </style>
 </head>
 <body>
@@ -161,7 +184,13 @@
   
 	<section id="demo-playlist" aria-labelledby="demo-playlist-title" style="border-top:0px;">
 		<h2 id="about-title">Forgotten Tides (Album)</h2>
-	  	<iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A2176083095&color=%23222732&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/migueldaher" title="Miguel Daher" target="_blank" style="color: #cccccc; text-decoration: none;">Miguel Daher</a> · <a href="https://soundcloud.com/migueldaher/sets/forgotten-tides" title="Forgotten Tides" target="_blank" style="color: #cccccc; text-decoration: none;">Forgotten Tides</a></div>
+		
+		<div class="bc-outer">
+		  <div class="bc-card">
+			<iframe style="border: 0; height: 400px;" src="https://bandcamp.com/EmbeddedPlayer/album=2987515130/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/" seamless><a href="https://migueldaher.bandcamp.com/album/forgotten-tides">Forgotten Tides by Miguel Daher</a></iframe>
+		  </div>
+		</div>
+
 	</section>	
 	
 	<section id="demo-playlist-2" aria-labelledby="demo-playlist-title-2">
