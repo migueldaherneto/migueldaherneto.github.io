@@ -141,17 +141,31 @@
 	  background: #fff;
 	  padding: 16px;
 	  border-radius: 12px;
-
 	  width: 100%;
 	  max-width: 600px; /* your cap */
 	}
 
-	.bc-card iframe {
-	  display: block;
-	  width: 100%;
-	  height: 470px;
+	.bc-embed {
+	  display:block;
+	  width: min(700px, 100%);
+	  height: 900px; /* desktop default */
 	}
 
+	/* tablets */
+	@media (max-width: 900px) {
+	  .bc-embed { height: 820px; }
+	}
+
+	/* phones */
+	@media (max-width: 600px) {
+	  .bc-embed { height: 740px; }
+	}
+
+	/* very small phones */
+	@media (max-width: 420px) {
+	  .bc-embed { height: 680px; }
+	}
+	
   </style>
 </head>
 <body>
@@ -187,7 +201,7 @@
 		
 		<div class="bc-outer">
 		  <div class="bc-card">
-			<iframe style="border: 0; height: 900px;" src="https://bandcamp.com/EmbeddedPlayer/album=2987515130/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://migueldaher.bandcamp.com/album/forgotten-tides">Forgotten Tides by Miguel Daher</a></iframe>
+			<iframe class="bc-embed" style="border: 0;" src="https://bandcamp.com/EmbeddedPlayer/album=2987515130/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://migueldaher.bandcamp.com/album/forgotten-tides">Forgotten Tides by Miguel Daher</a></iframe>
 		  </div>
 		</div>
 
@@ -195,7 +209,12 @@
 	
 	<section id="demo-playlist-2" aria-labelledby="demo-playlist-title-2">
 		<h2 id="about-title-2">Pocket Space Orchestration (Album)</h2>
-		<iframe width="100%" height="350" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A2177848319&color=%23222732&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/migueldaher" title="Miguel Daher" target="_blank" style="color: #cccccc; text-decoration: none;">Miguel Daher</a> · <a href="https://soundcloud.com/migueldaher/sets/pocket-space-mission" title="Pocket Space Orchestration" target="_blank" style="color: #cccccc; text-decoration: none;">Pocket Space Orchestration</a></div>
+		
+		<div class="bc-outer">
+		  <div class="bc-card">
+			<iframe class="bc-embed" style="border: 0;" src="https://bandcamp.com/EmbeddedPlayer/album=1512946807/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://migueldaher.bandcamp.com/album/pocket-space-orchestration">Pocket Space Orchestration by Miguel Daher</a></iframe>
+		  </div>
+		</div>
 	</section>
   
 
@@ -254,13 +273,26 @@
 	
 	<section id="contact" aria-labelledby="contact-title">
       <h2 id="contact-title">Contact me</h2>
+	  
       <p>
         <!-- Placeholder: you can add a form here later. For now, put an email link or buttons. -->
-        If you're looking to hire me / ask me for a custom demo / or other questions, please use
-        <a href="https://migueldaher.bandcamp.com/contact?b=2659734701">this form* (Bandcamp website)</a>.
+        If you're looking to hire me / ask me for a custom demo / or other questions, please use the link below to open the contact form on Bandcamp.
 	  </p>
+		
+	
+	  <table style="padding-top:10px;">
+	    <td>
+		  <img src="email.png" style="width:80px; padding-right:11px;">
+		</td>
+		<td>
+	      <p>
+		    <a href="https://migueldaher.bandcamp.com/contact?b=2659734701" target="_blank" rel="noopener noreferrer">Click here to open the contact form.</a>
+	      </p>
+	    </td>
+	  </table>
+	  
 	  <p>
-		* You will be asked to inform your e-mail address, subject and message.
+		Obs: You will be asked to inform your e-mail address, subject and message.
 	  </P>
 	  <br/>
     </section>
