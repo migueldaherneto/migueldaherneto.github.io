@@ -78,6 +78,10 @@
 	  border-radius: 100px;
     }
 
+	summary {
+	  cursor: pointer;
+	}
+
     /* --- Layout --- */
     .container { width: min(100% - 2rem, var(--maxw)); margin-inline: auto; }
     section { padding: 2.5rem 0; border-top: 1px solid var(--rule); }
@@ -190,8 +194,6 @@
 		<a href="#about">About Me</a>
 		<a href="#pricing">Pricing</a>
 		<a href="#contact">Contact Me</a>
-		<a href="#gear">Gear</a>
-		<!-- You can add more links here -->
 	  </nav>
 	</section>
   
@@ -222,20 +224,30 @@
     <section id="about" aria-labelledby="about-title">
       <h2 id="about-title">About me</h2>
 	  <p><img src="face.jpg" style="width: 250px;"></img></p>
-      <p>
-        I'm a music composer / producer (born in Brazil, 1984), specialized in Midi/VST (virtual instruments) and sample libraries, with a focus for creating video-game OSTs.
-	<br/>I'm able to create music of most styles, but my strengths are orchestral and modern/oldschool/hybrid game music. I'm partial to jRPGs or games that benefit from more distinct (non-generic) soundtracks.
-	<br/>My preference is being able to play the role of lead musician / music producer, and bringing my own ideas to the project when it comes to music; but I don't oppose to following directions if the creators already have a specific sound in mind.
-	<br/>As a sidenote, I'm also a software developer with some knowledge of game development, but my experience of 10+ years working at software companies has been mostly C#, web, mobile and apps (anything other than games). You can find more details about my technology skills on <a href="https://www.linkedin.com/in/migueldaher/">my linkedin page</a>.
-	<br/>Feel free to listen to some of my demos on this page!
-      </p>
+	  <br/><br/>
+		<p>
+		I’m a music composer and producer based in Brazil, working primarily with digital tools such as DAWs, virtual instruments, and sample libraries, with a strong focus on original soundtracks for video games.
+		</p>
+		<p>
+		Feel free to explore some of my work on this page.
+		</p>
+	<br/>Links:
+	<ul>
+	  <li>
+	    <a href="https://migueldaher.bandcamp.com/">Bandcamp</a>
+	  </li>
+	  <li>
+	    <a href="https://www.linkedin.com/in/migueldaher/">Linkedin</a>
+	  </li>
+	</ul>
+
     </section>
 
 
     <section id="availability" aria-labelledby="availability-title">
       <h2 id="availability-title">Current Availability</h2>
       <p>
-        Currently available for freelancer gigs (full time).
+        I’m currently available for new freelance composition and music production projects. Feel free to get in touch.
       </p>
     </section>
 	
@@ -244,11 +256,20 @@
       <h2 id="pricing-title">Pricing / Methodology</h2>
       
 	<p>
-		For the creation of production-ready music, the starting point is <b style="color:lightcoral">$200 per minute of music</b> with a <b style="color:lightcoral">game-exclusivity</b> license agreement.
+		For the creation of production-ready music, the starting point is <b style="color:lightcoral">$200 per minute of music</b> with a <b style="color:lightcoral">game-exclusive license</b>.
 	</p>
 	
 	<p style="color:#999">
-	* Game-exclusivity license: I (the composer) retain the rights to the music, and you retain an exclusive license to use it in your game (including DLC, patches, expansion, ports, promotional content such as videos, etc), as well as being able to sublicense it to use in any of your future games, or games from a 3rd party that includes your IP (crossovers), without needing my approval. I still have the right to publish the music elsewhere (such as for portfolio / self promotion reason) and handle the official OST release (which includes platforms such as spotify and youtube, using the game's name, logo and other key art). Different kinds of licensing can be discussed and negotiated as needed.
+	Base license (summary):<br/>
+	- I retain the copyright to the music, while you receive an exclusive license to use it in your game, including DLCs, patches, expansions, ports, and promotional content (trailers, videos, etc.).
+	<br/>
+	- The license also allows reuse of the music in future games within the same IP, as well as limited sublicensing for crossovers or cameo appearances involving your IP, without requiring additional approval, provided the project remains under the same team or company and no merger or change of control has taken place.
+	<br/>
+	- I retain the right to publish the music for portfolio and self-promotion purposes, and to handle the official soundtrack (OST) release on music platforms (such as Spotify and YouTube), using the game’s title and related branding as appropriate.
+	<br/>
+	- Alternative licensing terms can be discussed and negotiated depending on the project.
+	<br/>
+	Note: This is a high-level summary only. Full terms are defined in the written license agreement provided before work begins.
 	</p>
 	
 <br/>
@@ -257,12 +278,13 @@
 	My services include:
 	</p>
 	
-	<br/>- Brainstorming with development/artistic team in order to create something cohesive
-	<br/>- Ability to create sketches to test in-game before commiting to an idea
-	<br/>- Ability to work with programming tools for dynamic music if needed (making use of my background as a software developer)
-	<br/>- Ability to deliver production-ready tracks (mastering) mantaining proper/cohesive levels across the soundtrack (LUFS)
-	<br/>- Ability to work fast and make fast changes when needed (several years of experience with my DAW of choice, use of templates, proficiency with midi keyboard, etc)
-	<br/>
+	<ul>
+	  <li>Close collaboration and brainstorming with the development and art teams to shape a cohesive musical identity for the project</li>
+	  <li>Creation of musical sketches and prototypes for in-game testing before committing to a final direction</li>
+	  <li>Experience working with programming tools, including the implementation of dynamic and adaptive music systems</li>
+	  <li>Delivery of production-ready, professionally mastered tracks with consistent loudness and cohesion across the entire soundtrack (LUFS-balanced)</li>
+	  <li>Handling of the official soundtrack (OST) release and music distribution</li>
+	</ul>
 
 
       
@@ -298,69 +320,10 @@
     </section>
 	
 
-	
-    <section id="gear" aria-labelledby="gear-title" style="background: #333; padding: 30px;">
-      <h2 id="gear-title">Gear / Software</h2>
-
-DAW:
-<br/>Cakewalk Sonar
-<br/>
-<br/>Sampler:
-<br/><b style="color:lightcoral">Kontakt 7</b>
-<br/>
-<br/>Samples:
-<br/><b style="color:lightcoral">Kontakt 7 Factory Library</b>
-<br/><b style="color:lightcoral">Audio Imperia - Nucleus (Orchestral Library)</b>
-<br/><b style="color:lightcoral">Cinesamples Piano</b>
-<br/>Splash Sound - Percussion Elements (1,2 and 3)
-<br/>Splash Sound - Jaw Harp
-<br/>Splash Sound - Music Box
-<br/>AmpleGuitar_2_3_1
-<br/><b style="color:lightcoral">Indiginus Renaxxance II Nylon String Guitar</b>
-<br/><b style="color:lightcoral">Indiginus Renegade Acoustic Guitar</b>
-<br/><b style="color:lightcoral">Embertone Joshua Bell Violin</b>
-<br/><b style="color:lightcoral">Ilya Efimov Nylon Guitar</b>
-<br/><b style="color:lightcoral">Ilya Efimov Acoustic Guitar</b>
-<br/>Project Sam Free Orchestra 1 & 2 (Church Organ, Concert Harp, Upright Bass)
-<br/>FluffyAudio Free Koto, Haunted Choir, LogDrum, Xaxophone, Khim
-<br/>Impact Soundworks Shreddage 3 Precision Free (Electric Bass Guitar)
-<br/>Impact Soundworks Shreddage 3 Stratus Free (Clean Electric Strat Guitar)
-<br/>
-<br/>Plugins:
-<br/><b style="color:lightcoral">Liquidsonics Cinematic Rooms (Reverb)</b>
-<br/><b style="color:lightcoral">Valhalla Vintage Verb (Reverb)</b>
-<br/>Valhalla Supermassive Verb (Reverb)
-<br/>Convology XT Plugin (Reverb)
-<br/>Samplicity - Bricasti IRs version 2023-10 (Reverb IRs)
-<br/>Ozone Elements (eq, imager, limiter)
-<br/>FreeComp (FreeSuite) (Compressor)
-<br/>TDR Nova (Dynamic Eq)
-<br/>LoudMax (Limiter)
-<br/>Graillon (Pitch)
-<br/>IVGI2 (Saturation)
-<br/>TDR VOS SlickEQ (Saturation)
-<br/>TDR Nova (Dynamic EQ)
-<br/>TDR Kotelnikov (Mastering Compressor)
-<br/><b style="color:lightcoral">BABY Audio Comeback Kid (Delay)</b>
-<br/> 
-<br/>Hardware:
-<br/><b style="color:lightcoral">Scarlett 2i2</b>
-<br/><b style="color:lightcoral">JBL 305p MkII Audio Monitors</b>
-<br/><b style="color:lightcoral">AKG K240 MkII Headphones</b>
-<br/><b style="color:lightcoral">AKG K371 Headphones</b>
-<br/><b style="color:lightcoral">Sennheiser HD560S Headphones</b>
-<br/>
-<br/>Instruments:
-<br/><b style="color:lightcoral">Casio CDP S100 Digital Piano 88 Keys</b>
-<br/><b style="color:lightcoral">Rozini Rx210 Nylon Guitar</b>
-<br/>
-<br/>PS: All paid software/samples listed here (the ones in <b style="color:lightcoral">red</b>) are licensed to use in music made by me for commercial projects. Proof of ownership can be provided if needed.
-    </section>
-
 
 	<section>
 	  <p>
-		<b>DISCLAIMER:</b> All the music on this site was created and produced by me. I work with DAWs (midi sequencing), Sample Libraries and VSTs, and don't use generative AI in my music, nor do I create music using full-bar "loops". Everything, from the rhythms to the melodies, are created note by note through midi sequencing, or ocasionally through midi FXs such as arpeggiators.
+		<b>Disclaimer:</b> All music featured on this site is original and composed and produced by me. I work exclusively with fully licensed professional software and sample libraries suitable for commercial release. No generative AI is used in the composition or production of my music.
 	  </p>
 	  
     </section>
