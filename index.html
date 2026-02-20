@@ -279,7 +279,7 @@
 	  
       <p>
         <!-- Placeholder: you can add a form here later. For now, put an email link or buttons. -->
-        If you're looking to hire me / ask me for a custom demo / or other questions, please use the link below to open the contact form on Bandcamp.
+        If you're looking to hire me / ask me for a custom demo / or other questions, please contact me through the following e-mail:
 	  </p>
 		
 	
@@ -289,14 +289,12 @@
 		</td>
 		<td>
 	      <p>
-		    <a href="https://migueldaher.bandcamp.com/contact?b=2659734701" target="_blank" rel="noopener noreferrer">Click here to open the contact form.</a>
+		    <a id="email-link" href="#">Loading contact...</a>
 	      </p>
 	    </td>
 	  </table>
 	  
-	  <p>
-		Obs: You will be asked to inform your e-mail address, subject and message.
-	  </P>
+	  <br/>
 	  <br/>
     </section>
 	
@@ -312,5 +310,14 @@
     // Auto-update the footer year
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
+  
+  <script>
+  const encoded = "bWlndWVsZGFoZXJtdXNpY0BnbWFpbC5jb20="; 
+  const decoded = atob(encoded);
+  const linkElement = document.getElementById("email-link");
+  linkElement.href = "mailto:" + decoded;
+  linkElement.textContent = decoded;
+  </script>
+  
 </body>
 </html>
